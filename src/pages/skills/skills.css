@@ -1,0 +1,70 @@
+.content {
+    margin-top: 7%;
+}
+
+.size {
+    max-width : 460px;
+    max-height: 250px; 
+}
+
+.carousel {
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    -webkit-box-shadow: 5px 5px 15px 5px #0541A4; 
+    box-shadow: 5px 5px 15px 5px #0541A4;
+    border: 1px solid #0541A4;
+    border-radius: .25rem;
+}
+
+.makeStyles-root-1 {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+p > .description {
+    max-height: 400px;
+    overflow-y: scroll;
+    padding: 5%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #0541A4;
+}
+  
+.carousel-control-next-icon {
+    display: none !important;
+}
+.carousel-control-prev-icon {
+    display: none !important;
+}
+
+.carousel-indicators {
+    display: none !important;
+}
+
+.carousel-size {
+    max-width : 460px;
+}
+
+.description {
+    text-align: justify;
+}
+
+@media screen and (max-width: 991px) {
+    .content {
+        margin-top: 20%;
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "hints": {
+        "strict-transport-security": "error",
+        "minified-js": "error",
+        "https-only": "error",
+        "x-content-type-options": "error",
+        "no-html-only-headers": "error",
+        "image-optimization-cloudinary": ["error", {
+            "threshold": 10
+        }],
+        "http-cache": "error"
+    },
+    "parsers": ["javascript"]
+}

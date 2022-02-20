@@ -1,0 +1,78 @@
+.dialog {
+    margin-top: 7%;
+}
+
+.home-picture {
+    width: 100%;
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.home-picture:hover {
+    opacity: 0.7;
+    width: 100%;
+    transition: 2s;
+    -webkit-box-shadow: 5px 5px 5px 0px #0541A4, inset 4px 4px 15px 0px #0541A4, -4px 5px 15px 5px #0541A4; 
+    box-shadow: 5px 5px 5px 0px #0541A4, inset 4px 4px 15px 0px #0541A4, -4px 5px 15px 5px #0541A4;
+}
+
+.home-picture2 {
+    opacity: 0.7;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    width: 100%;
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.home-picture2:hover {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+    transition: 2s;
+    -webkit-box-shadow: 5px 5px 5px 0px #0541A4, inset 4px 4px 15px 0px #0541A4, -4px 5px 15px 5px #0541A4; 
+    box-shadow: 5px 5px 5px 0px #0541A4, inset 4px 4px 15px 0px #0541A4, -4px 5px 15px 5px #0541A4;
+}
+
+.link-to {
+    text-align: right;
+}
+
+.home-btn {
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+
+    .dialog {
+        margin-left: 2%;
+        margin-top: 20%;
+        text-align: center;
+    }
+
+    .home-btn {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .home-picture2 {
+       margin-top: 2%;
+       height: 100%;
+       width: 100%;
+    }
+
+    .home-picture {
+        display:none
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .home-btn {
+        margin-top: 4%;
+        width: 70%;
+    }
+}
+
+
+

@@ -1,0 +1,49 @@
+.nav-link {
+    border-bottom: 1px solid transparent;
+    color:white !important;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid white;
+    transition: 1s;
+    /*color:#3f51b5 !important;*/
+}
+
+.logo > img {
+    border-radius: 0.25em;
+    width: 45px;
+    height: 45px;
+}
+
+.navbar {
+    background: linear-gradient(70deg,#0541A4, lightgrey);
+
+}
+
+.nav-link {
+    padding: 0.15rem  0.15rem ; 
+}
+
+@media screen and (max-width: 991px) {
+
+    .nav-link {
+        margin-left: 2%;
+        color:white !important;
+    }
+    .nav-link:hover {
+        border-bottom: none !important;
+        transition: 1s;
+        margin-left: 25px;
+        color:white !important;
+    }
+    .navbar-toggler {
+        background-color:white !important;
+    }
+
+    .logo > img {
+        width:56px;
+        height: 56px;
+    }
+}
+
+

@@ -1,0 +1,12 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-image: url("./assets/pictures/background/line_light_wavy_neon-design_HD_wallpaper_1600x1200.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
