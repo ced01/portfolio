@@ -45,11 +45,11 @@ function TabPanel(props) {
     );
 }
   
-  TabPanel.propTypes = {
+TabPanel.propTypes = {
     children: PropTypes.node,
     index: PropTypes.any.isRequired,
     value: PropTypes.any.isRequired,
-  };
+};
 
 function a11yProps(index) {
     return {
@@ -61,9 +61,8 @@ function a11yProps(index) {
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
-      width: '100%',
       backgroundColor: theme.palette.background.paper,
-      marginTop:'5%',
+      marginTop:'3%',
     },
     rootlist: {
         width: '100%',
@@ -98,7 +97,7 @@ function Skills () {
                     textColor="primary"
                     variant="scrollable"
                     scrollButtons="auto"
-                    aria-label="scrollable auto tabs example"
+                    aria-label="scrollable auto tabs"
                     >
                     <Tab label="Data Driven France" {...a11yProps(0)} />
                     <Tab label="Air France / KLM" {...a11yProps(1)} />
@@ -192,42 +191,42 @@ maintenance des différentes applications les plages electroniques, le cabaret a
                 </TabPanel>
             </Col>
             <Col md="6" sm="12">
-            <Carousel className="carousel-size">
-            <Carousel.Item className="carrousel-item">
-                <Image 
-                    className="d-block w-100 size" 
-                    src={dataDrivenLogo} 
-                    alt="dataDrivenLogo" 
-                    rounded 
-                />
-            </Carousel.Item>
-            <Carousel.Item className="carrousel-item">
-                <Image 
-                    className="d-block w-100 size" 
-                    src={airFranceKlmLogo}
-                    alt="airFranceKlmLogo"
-                    rounded 
-                />
-            </Carousel.Item>
-            <Carousel.Item className="carrousel-item">
-                <Image 
-                    className="d-block w-100 size" 
-                    src={beepeersLogo}
-                    alt="beepeersLogo"
-                    rounded 
-                />
-                </Carousel.Item>
+                <Carousel className="carousel-size" controls={false}>
                     <Carousel.Item className="carrousel-item">
-                    <Image 
-                        className="d-block w-100 size" 
-                        src={qenviLogo}
-                        alt="qenviLogo"
-                        rounded 
-                    />
-                </Carousel.Item>
-            </Carousel>
-        </Col>
-      </Row>
+                        <Image 
+                            className="d-block w-100 size" 
+                            src={dataDrivenLogo} 
+                            alt="dataDrivenLogo" 
+                            rounded 
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item className="carrousel-item">
+                        <Image 
+                            className="d-block w-100 size" 
+                            src={airFranceKlmLogo}
+                            alt="airFranceKlmLogo"
+                            rounded 
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item className="carrousel-item">
+                        <Image 
+                            className="d-block w-100 size" 
+                            src={beepeersLogo}
+                            alt="beepeersLogo"
+                            rounded 
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item className="carrousel-item">
+                        <Image 
+                            className="d-block w-100 size" 
+                            src={qenviLogo}
+                            alt="qenviLogo"
+                            rounded 
+                        />
+                    </Carousel.Item>
+                </Carousel>
+             </Col>
+        </Row>
     </Container>
   );
 }
